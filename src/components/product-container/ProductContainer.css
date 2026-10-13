@@ -1,0 +1,16 @@
+/* .destacados-section h2 {
+    font-family: var(--font-title);
+    text-align: center;
+    padding: var(--spacing-lg);
+    font-size: var(--font-size-2xl);
+} */
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+}
+
+

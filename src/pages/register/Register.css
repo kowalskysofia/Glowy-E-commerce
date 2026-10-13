@@ -1,0 +1,128 @@
+.register {
+    display: flex;
+    justify-content: center;
+}
+
+.register-form {
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-sm);
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-md);
+}
+
+.info-text {
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+}
+.info-text h2 {
+    font-size: var(--font-size-2xl);
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.register-form input,
+.register-form textarea,
+.register-form select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 6px;
+    font-size: var(--font-size-lg);
+    background: var(--color-bg);
+    box-sizing: border-box;
+    
+}
+
+.register-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color--button--secondary);
+    color: var(--color-bg);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.sesion-text {
+    margin: var(--spacing-md);
+    text-align: center;
+}
+.sesion-text a {
+    color: var(--color-accent);
+}
+
+/*error del formulario */
+.register-form .error {
+    font-size: 13px;
+    color: #d32f2f;
+    margin-top: -5px;
+    margin-bottom: 8px;
+}
+
+/*registro exitoso */
+.register-form .success-message {
+    font-size: 14px;
+    color: #218838;
+    background-color: #eaf7ee;
+    border: 1px solid #b7e4c7;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+}
+
+/* ocultar o mostrar contraseña*/
+.password-input-container {
+    position: relative;
+    width: 100%;
+}
+.password-input-container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 45px;
+}
+.password-input-container .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: var(--color-text-light);
+    cursor: pointer;
+    font-size: 16px;
+}
+.password-input-container .password-toggle:hover {
+    background: transparent;
+    color: var(--color-accent);
+}
+
+
+.password-input-container .password-toggle:focus-visible {
+    outline: 2px solid var(--color-accent);
+    border-radius: var(--radius-sm);
+}

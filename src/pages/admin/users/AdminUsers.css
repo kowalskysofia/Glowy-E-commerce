@@ -1,0 +1,308 @@
+
+
+.admin-users-layout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    color: var(--color-text);
+}
+
+.admin-users-layout h1 {
+    margin: 0 0 12px;
+    color: var(--color-text);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.admin-users-layout > p {
+    margin: 12px 0 20px;
+    line-height: 1.5;
+}
+
+.admin-users-layout strong {
+    color: var(--color-accent);
+}
+
+
+
+
+.admin-users-message {
+    margin: 15px 0;
+    padding: 12px 15px;
+    color: #356344;
+    background-color: var(--category--color2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+}
+
+.admin-users-layout .error {
+    margin: 12px 0;
+    padding: 10px 12px;
+    color: #a52f3b;
+    background-color: #f9e7e7;
+    border: 1px solid #e8bcbc;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+}
+
+
+
+.admin-users-layout button {
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.admin-users-layout button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+.admin-users-add-button {
+    margin: 5px 0 25px;
+    padding: 10px 16px;
+    background-color: var(--color--button--secondary);
+    color: var(--text-color);
+}
+
+.admin-users-add-button:hover {
+    background-color: var(--color-accent);
+}
+
+
+
+.admin-users-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0 30px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.admin-users-form h2 {
+    margin: 0 0 10px;
+    color: var(--color-text);
+    font-size: 22px;
+}
+
+.admin-users-form label {
+    margin-top: 5px;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--font-body);
+}
+
+.admin-users-form input,
+.admin-users-form select {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 14px;
+}
+
+.admin-users-form input:focus,
+.admin-users-form select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(201, 140, 140, 0.2);
+}
+
+
+.admin-users-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.admin-users-form-actions button {
+    padding: 10px 16px;
+}
+
+.admin-users-form-actions button[type="submit"] {
+    background-color: var(--color--button--secondary);
+    color: var(--text-color);
+}
+
+.admin-users-form-actions button[type="submit"]:hover {
+    background-color: var(--color-accent);
+}
+
+
+.admin-users-form-actions button[type="button"] {
+    background-color: var(--category--color);
+    color: var(--color-text);
+}
+
+.admin-users-form-actions button[type="button"]:hover {
+    background-color: var(--color-border);
+}
+
+
+
+
+.users-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-sm);
+}
+
+.users-table-container table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: var(--font-body);
+}
+
+.users-table-container th,
+.users-table-container td {
+    padding: 15px 12px;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 14px;
+}
+
+.users-table-container th {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    font-family: var(--font-title);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.users-table-container tbody tr:nth-child(even) {
+    background-color: var(--color-bg-alt);
+}
+
+.users-table-container tbody tr:hover {
+    background-color: var(--category--color);
+}
+
+.users-table-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.users-table-container td {
+    overflow-wrap: anywhere;
+}
+
+
+.admin-users-actions {
+    white-space: nowrap;
+}
+
+.admin-users-actions .product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.admin-users-actions .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 34px;
+    width: 34px;
+    min-width: 34px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.admin-users-actions .btn-edit {
+    background-color: var(--color-primary);
+}
+
+.admin-users-actions .btn-delete {
+    background-color: var(--category--color2);
+}
+
+.admin-users-actions .btn-action:hover {
+    opacity: 0.85;
+}
+
+.admin-users-actions .btn-action:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+
+@media (max-width: 768px) {
+    .admin-users-layout {
+        margin: 20px auto;
+        padding: 20px 14px;
+    }
+
+    .admin-users-layout h1 {
+        font-size: 24px;
+    }
+
+    .admin-users-form {
+        padding: 20px 15px;
+    }
+
+    .admin-users-form-actions {
+        flex-direction: column;
+    }
+
+    .admin-users-form-actions button {
+        width: 100%;
+    }
+
+    .users-table-container th,
+    .users-table-container td {
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-users-layout {
+        padding: 16px 10px;
+    }
+
+    .admin-users-layout h1 {
+        font-size: 21px;
+    }
+
+    .admin-users-form h2 {
+        font-size: 19px;
+    }
+
+    .admin-users-add-button {
+        width: 100%;
+    }
+}

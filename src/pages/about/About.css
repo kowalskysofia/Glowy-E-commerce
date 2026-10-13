@@ -1,0 +1,298 @@
+
+.about-page {
+    --color-secondary: #f2dede;
+    --color-accent: #c98c8c;
+    --color-text: #000000;
+    --color-text-light: #565656;
+    --color-bg-alt: #faf6f4;
+
+    --font-title: "Playfair Display", serif;
+    --font-body: "Montserrat", sans-serif;
+
+    --font-size-sm: 0.87rem;
+    --font-size-2xl: 2rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    width: 100%;
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+    box-sizing: border-box;
+}
+
+
+
+.about-page .about-hero {
+    width: 100%;
+    margin-top: 1rem;
+    
+}
+
+.about-page .about-hero img {
+    display: block;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.about-page .history {
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+.about-page .section-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-page .history .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-page .info-content {
+    width: 100%;
+    text-align: center;
+}
+
+.about-page .info-content h2,
+.about-page .mission-content h2 {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    border-bottom: 3px solid var(--color-accent);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.about-page .info-content p,
+.about-page .mission-content p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-page .info-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.about-page .info-image img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    max-height: 500px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+
+.about-page .beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 3rem 1.25rem;
+    background-color: var(--color-secondary);
+}
+
+.about-page .beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+.about-page .beneficio img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.about-page .beneficio h3 {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+}
+
+.about-page .beneficio p {
+    max-width: 280px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+.about-page .mission {
+    width: 100%;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.about-page .mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-page .about-heart-icon {
+    display: block;
+    margin: 0 auto 1rem;
+    color: var(--color-accent);
+    font-size: 2rem;
+}
+
+.about-page .btn-gnl {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 6px;
+    background-color: var(--color-accent);
+    color: white;
+ font-size: 0.95rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-page .btn-gnl:hover {
+    background-color: transparent;
+    color: #8f5656;
+}
+
+
+
+.about-page .developer-section {
+    width: 100%;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-bg-alt);
+}
+
+.about-page .developer-section .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-page .developer-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+}
+
+.about-page .developer-icon svg {
+    color: var(--color-accent);
+    font-size: 2.5rem;
+}
+
+.about-page .developer-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-page .section-subtitle {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-page .developer-content h2 {
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-title);
+    font-size: var(--font-size-2xl);
+}
+
+.about-page .developer-content p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .about-page .history {
+        padding: 4rem 2rem;
+    }
+
+    .about-page .history .section-wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+    .about-page .history .info-content,
+    .about-page .history .info-image {
+        flex: 1;
+        min-width: 0;
+    }
+    .about-page .history .info-content {
+        text-align: left;
+    }
+    .about-page .history .info-image {
+        margin-top: 0;
+    }
+    .about-page .history .info-image img {
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .about-page .beneficios {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        padding: 4rem 2rem;
+    }
+    .about-page .beneficio {
+        flex: 1;
+    }
+    .about-page .mission {
+        padding: 4rem 2rem;
+    }
+    .about-page .developer-section .section-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-page .info-content h2,
+    .about-page .mission-content h2 {
+        font-size: 1.65rem;
+    }
+
+    .about-page .developer-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-page .btn-gnl {
+        max-width: 100%;
+        text-align: center;
+    }
+}

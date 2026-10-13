@@ -1,0 +1,135 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    gap: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.login-form .info-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.login-form h2 {
+    margin-bottom: 10px;
+}
+
+
+.login-form label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #c58ca5;
+}
+
+.login-form .error {
+    color: #c62828;
+    font-size: 13px;
+    margin: -5px 0 5px;
+}
+
+.login-form button {
+ padding: 12px;
+margin-top: 10px;
+border: none;
+ border-radius: 6px;
+    background-color: var(--color-accent);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    opacity: 0.9;
+}
+
+.login-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.login-form .register-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-form .register-text a {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-form .register-text a:hover {
+    text-decoration: underline;
+}
+
+
+.password-input-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 45px;
+}
+
+.password-input-container .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: var(--color-text-light);
+    cursor: pointer;
+    font-size: 16px;
+}
+.password-input-container .password-toggle:hover {
+    background: transparent;
+    color: var(--color-accent);
+}
+.password-input-container .password-toggle:focus-visible {
+    outline: 2px solid var(--color-accent);
+    border-radius: var(--radius-sm);
+}
+
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 25px 20px;
+    }
+}
