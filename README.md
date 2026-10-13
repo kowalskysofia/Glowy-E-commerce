@@ -19,7 +19,7 @@ MockAPI: servicio externo utilizado como API para almacenar y gestionar producto
 Git y GitHub: control de versiones y almacenamiento del código fuente.
 
 Pasos para clonar e instalar:
-git clone https://github.com/tu-usuario/ecommerce-react
-cd ecommerce-react
+git clone https://github.com/kowalskysofia/Glowy-E-commerce.git
+cd ecommerce-frontend
 npm install
 npm run dev
