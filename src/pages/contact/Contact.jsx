@@ -8,7 +8,7 @@ import {
   faLocationDot
 } from "@fortawesome/free-solid-svg-icons";
 
-import "./contact.css";
+import "./Contact.css";
 
 function Contact() {
   const [aviso, setAviso] = useState("");
